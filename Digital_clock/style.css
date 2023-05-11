@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+}
+
+.dummyBody{
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    /* background-color: blue; */
+    /* width: 100vh; */
+    /* this line specifies the height of body is 100 viewport height */
+   
+    /* background-image: url("https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1203&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+     */
+    
+    /* background-size: inherit; */
+    
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: rgba(255, 248, 220, 0.471);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 3.5vh;
+    padding: 1.1rem;
+}
+.clock{
+    display: flex;
+
+}
+.clock div{
+    margin: 5px;
+    position: relative;
+}
+.clock span{
+    width: 7rem;
+    height: 4rem;
+    background-color: rgba(255, 235, 205, 0.779);
+    font-size: 7vh;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+/* here specify the exack div as it  is a flex display
+ then alter the remaining */
+.clock .text{
+    height: 2.5rem;
+    background-color: rgba(255, 235, 205, 0.495);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: .8rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.clock #ampm{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 1.6rem;
+    width: 2.1rem;
+    font-size: 1.2rem;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.video video{
+    margin: 0;
+    width: 101vw;
+    height: 100vh;
+    
+    position: absolute;
+    z-index: -1;
+
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 600px){
+    .clock span{
+        width: 5rem;
+        height: 3.7rem;
+    }
+}
